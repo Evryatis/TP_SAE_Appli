@@ -1,3 +1,14 @@
+package vue;
+
+import javafx.geometry.Insets;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import modele.Position;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class VBoxRoot extends VBox implements CanvasConstantes{
     Label nbre_pas = new Label();
@@ -78,4 +89,4 @@ public class VBoxRoot extends VBox implements CanvasConstantes{
         };
         timer.scheduleAtFixedRate(timerTask, 1000, 200);
     }
-    
+
